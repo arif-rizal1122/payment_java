@@ -1,5 +1,6 @@
 import React from 'react'
-
+import HomeSectionCard from '../homeSectionCard/HomeSectionCard';
+import AliceCarousel from 'react-alice-carousel';
 
 
 
@@ -7,20 +8,25 @@ function HomeSectionCarousel() {
 
    const responsive = {
         0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3 },
+        750: { items: 3 },
+        1024: { items: 5.5 },
     };
 
+    const items = [1,1,1,1,1].map((item)=> <HomeSectionCard/>)
 
     return (
-      <AliceCarousel
-        mouseTracking
-        items={items}
-        disableButtonsControls
-        autoPlay
-        autoPlayInterval={1000}
-        responsive={responsive}
-      />
+      <div className='relative px-4 lg:px-8'>
+      <div className='relative p-5'>
+        <AliceCarousel
+          mouseTracking
+          items={items}
+          disableButtonsControls
+          responsive={responsive}
+        />
+      </div>
+      </div>
+      
+      
     );
 }
 
