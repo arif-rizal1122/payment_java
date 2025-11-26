@@ -6,11 +6,12 @@ import AliceCarousel from 'react-alice-carousel';
 
 function HomeSectionCarousel() {
 
-   const responsive = {
-        0: { items: 1 },
-        750: { items: 3 },
-        1024: { items: 5.5 },
-    };
+  const responsive = {
+      0: { items: 1 },
+      600: { items: 2 },
+      900: { items: 3 },
+      1200: { items: 4 },
+  };
 
     const items = [1,1,1,1,1].map((item)=> <HomeSectionCard/>)
 
