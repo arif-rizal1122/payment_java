@@ -2,3 +2,4 @@
 2. besok melakukan beberapa tugas untuk menyelasaikan 30m waktu productif
 3. masalah produktifitas gue kacau
 4. brainroot 
+5. banjir dopamin
